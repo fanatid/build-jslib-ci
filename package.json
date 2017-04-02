@@ -1,0 +1,39 @@
+{
+  "name": "build-jslib-ci",
+  "version": "1.0.0",
+  "description": "Use CI for build and upload js libraries bundles",
+  "bugs": {
+    "url": "https://github.com/fanatid/build-jslib-ci/issues"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Kirill Fomichev <fanatid@ya.ru> (https://github.com/fanatid)"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "main": "./index.js",
+  "bin": {
+    "build-jslib-ci": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fanatid/build-jslib-ci.git"
+  },
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint"
+  },
+  "dependencies": {
+    "cross-spawn": "^5.1.0",
+    "ghreleases": "^1.0.5",
+    "github-from-package": "^0.0.0",
+    "glob": "^7.1.1",
+    "minimist": "^1.2.0",
+    "npm-run-path-compat": "^2.0.3",
+    "npmlog": "^4.0.2"
+  },
+  "devDependencies": {
+    "standard": "^9.0.2"
+  }
+}
